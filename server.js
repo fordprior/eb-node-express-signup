@@ -42,6 +42,9 @@ var sns = new AWS.SNS({ region: config.AWS_REGION});
 //GET home page.
 app.get('/', routes.index);
 
+//GET test results
+// app.get('/results', routes.results);
+
 //POST signup form.
 app.post('/signup', function(req, res) {
   var nameField = req.body.name,
